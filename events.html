@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JavaScript</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .a{
+            background-color: aqua;
+            color: aliceblue;
+        }
+        .a:hover{
+            background-color:bisque;
+        }
+        .b{
+            background-color: blue;
+            color: brown;
+        }
+        div input{
+            background-color: darkblue;
+            color: azure;
+        }
+        form{
+            background-color: chartreuse;
+        }
+        .c1:hover{
+background-color: aqua;
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+   <h1>Java Script Events</h1>
+   <h2 id="demo" class="a"></h2>
+   <h2 id="demo1" class="b"></h2>
+   <h2 id="demo2"></h2>
+   <h2 id="demo3"></h2>
+   <h2 id="demo4"></h2>
+   <h2 id="demo5"></h2>
+   <h2 id="demo6"></h2>
+   <h2 id="demo7"></h2>
+   <div>
+    <form>
+        <input type="button" value="onclick" onclick="raj()" class="c1"><br><br>
+        <input type="button" value="ondbclick" ondblclick="nandu()" style=""><br><br>
+        <input type="button" value="onmouseover" onmouseover="akina()"><br><br>
+        <input type="button" value="onmouseout" onmouseout="akina1()"><br><br>
+        <input type="text" onfocus="akina2()"><br><br>
+        <input type="text" onblur="akina3()"><br><br>
+        <input type="text" onchange="akina4()"><br><br>
+        <input type="submit" value="onsubmit" onsubmit="akina5()"><br><br>
+    </form>
+</div>
+<div>
+    <form action="https://www.facebook.com/login/" method="post">
+        <input type="text" value="" name="text">
+        <input type="password" value="" name="password">
+        <input type="submit" value="" name="submit">
+    </form>
+</div>
+    <script> 
+        function raj(){
+            //document.write("hello");
+            document.getElementById("demo").innerHTML="This is onClick Event";
+        }
+        function nandu(){
+           document.getElementById("demo1").innerHTML="This is ondbclick event";
+            console.log("This is ondbclick event");
+        }
+        function akina(){
+            document.getElementById("demo2").innerHTML="This is on mouse over event";
+           console.log("This is onmouseover event");
+        }
+        function akina1(){
+            document.getElementById("demo3").innerHTML="This is on mouse out event";
+        }
+        function akina2(){
+            document.getElementById("demo4").innerHTML="This is on focus event";
+        }
+        function akina3(){
+            document.getElementById("demo5").innerHTML="This is on blur event";
+        }
+        function akina4(){
+            document.getElementById("demo6").innerHTML="This is on change event";
+        }
+        function akina5(){
+            document.getElementById("demo7").innerHTML="This is on submit event";
+        }
+    </script>
+</body>
+</html>
